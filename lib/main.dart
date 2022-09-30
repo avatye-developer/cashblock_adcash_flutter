@@ -1,4 +1,3 @@
-import 'package:cashblock_adcash_flutter/Banner.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -15,8 +14,6 @@ enum AdCashBannerType {
 
   const AdCashBannerType(this.bannerName);
 }
-
-List<ADCashBanner> bannerList = [];
 
 void main() {
   runApp(const MyApp());
