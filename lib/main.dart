@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'dart:developer';
 
@@ -133,6 +132,7 @@ class CustomBanner extends StatefulWidget {
 class _CustomBannerState extends State<CustomBanner> {
   static const platform = MethodChannel('avatye.cashblock.adcash/sample');
 
+  // 테스트 지면 키(placement ID)
   String getBannerPlacementID() {
     if (widget.bannerType == AdCashBannerType.BANNER_LOADER_320_50.bannerName) {
       return "b3c48897-921c-4b25-909f-56e69f2ab275";
@@ -152,7 +152,7 @@ class _CustomBannerState extends State<CustomBanner> {
       await platform.invokeMethod('cashBlock_adcash_load', <String, dynamic>{'placemnetID': getBannerPlacementID(), 'bannerType': widget.bannerType});
     } on PlatformException catch (e) {
       if (kDebugMode) {
-        print('_MyHomePageState -> _initCashBlock() --> error ${e.message}');
+        print('CustomBanner -> _loadAdCash() --> error ${e.message}');
       }
     }
   }
