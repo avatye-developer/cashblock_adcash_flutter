@@ -49,13 +49,13 @@ class MainActivity : FlutterActivity() {
                 // 광고 노출 성공
             }
 
-            override fun ondFailed(error: AdError) {
-                // 광고 오류
-            }
-
             override fun onClosed(completed: Boolean) {
                 // 광고 종료
                 // completed: 리워드 광고 시청 완료 또는 일반 지면 정상 종료 여부
+            }
+
+            override fun onFailed(error: AdError) {
+                // 광고 오류
             }
 
             override fun onClicked() {

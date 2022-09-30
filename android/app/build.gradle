@@ -28,7 +28,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 32
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -50,7 +50,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion 23
-        targetSdkVersion 33
+        targetSdkVersion 32
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -75,7 +75,7 @@ dependencies {
      * 애드캐시@캐시블록
      * ADCash SDK
      */
-    implementation 'org.bitbucket.avatye.sdk-cash-block:block-unit-adcash:1.2.0'
+    implementation 'org.bitbucket.avatye.sdk-cash-block:block-unit-adcash:1.2.2'
 }
 
 
