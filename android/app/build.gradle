@@ -75,7 +75,7 @@ dependencies {
      * 애드캐시@캐시블록
      * ADCash SDK
      */
-    implementation 'org.bitbucket.avatye.sdk-cash-block:block-unit-adcash:1.2.2'
+    implementation 'org.bitbucket.avatye.sdk-cash-block:block-unit-adcash:1.2.6'
 }
 
 
